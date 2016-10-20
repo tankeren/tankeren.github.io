@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+  <meta name="description" content="在本篇文章中，我们将介绍15个炫酷且实用的技巧，这将更快的提高你的开发效率。">
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="chan">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="Chrome的开发必备小技巧"/>
+  
+  <!--Open Graph Description-->
+  
+      <meta property="og:description" content="在本篇文章中，我们将介绍15个炫酷且实用的技巧，这将更快的提高你的开发效率。" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Hexo"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>Chrome的开发必备小技巧 - Hexo</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/">
+                
+                  首页
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  文章
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/categories">
+                
+                  分类
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/tags">
+                
+                  标签
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/works">
+                
+                  作品
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  关于我
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            Chrome的开发必备小技巧
+            
+          </h1>
+          <p class="posted-on">
+          2016-10-20
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/Chrome/" rel="tag">
+                  Chrome
+                </a>
+              
+                <a href="/tags/调试工具/" rel="tag">
+                  调试工具
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <p><img src="/assets/img/chrom.jpg" alt="Alt chrome"><br>谷歌Chrome，是当前最流行且被众多web开发人员使用的浏览器。最快六周就更新发布一次以及伴随着它不断强大的开发组件，使得Chrome成为你必备的开发工具。例如，在线编辑CSS，console以及debugger这些常用的调试技术，或许你已经了解。在本篇文章中，我们将介绍15个炫酷且实用的技巧，这将更快的提高你的开发效率。</p>
+<p>一、快速查找文件</p>
+<p>如果你使用过Sublime，那么你会知道’Go to anything’的强大。没错，Chrome现在也有了这一功能。</p>
+<p>操作如下：</p>
+<p>1、F12打开你的Chrome调试器；</p>
+<p>2、按下Ctrl+P（Mac上Cmd + P）;</p>
+<p>3、搜索你想打开的文件名即可。</p>
+<p>二、在源代码中搜索</p>
+<p>但是，如果我们想在整个工程下，查找一段源代码呢？</p>
+<p>操作如下：</p>
+<p>1、F12打开你的Chrome调试器；</p>
+<p>2、按下Ctrl+Shift+F（Mac上Cmd+Opt+F）;</p>
+<p>3、在输入框中输入你想查询的源代码，回车，就OK啦。</p>
+<p>注：该搜索也支持正则表达式。</p>
+<p>三、跳到指定行</p>
+<p>当你在Chrome调试器的sources栏，已经打开了文件，Chrome也允许你跳到指定的行数，在Windows和Linux系统下，只需按下Ctrl+G（Mac上Cmd+L），然后输入你指定的行数即可。</p>
+<p>另一种，方法就是Ctrl+O，输入”:”+行数即可。</p>
+<p>四、在控制台(Console)中获取DOM元素</p>
+<p>Chrome控制台，提供了方法和变量来快速获取页面中的DOM元素，如下：</p>
+<p>1、$()—就是document.querySelector()原生方法的映射。功能嘛，就是获取并返回第一个与填写的CSS属性匹配的DOM元素，如$(‘div’)就会返回第一个出现在页面中的div元素。</p>
+<p>2、$$()—就是document.querySelectorAll()原生方法的映射。功能嘛，就是获取并返回一个数组，数组中包含了所有与你填写的CSS属性匹配的DOM元素。</p>
+<p>3、$0–$4—代表你在Chrome调试器中操作不同DOM元素的历史记录，且最多记录5次，故而只有$0-$4这五个变量。$0代表最近一次，依次类推。</p>
+<p>五、多光标</p>
+<p>另一个牛逼的功能就是多光标。</p>
+<p>当你想在呈现的文件中多处操作代码时，你可以通过按住Ctrl（Mac上Cmd），然后鼠标点击，你想要出现的光标处即可。</p>
+<p>六、保存日志</p>
+<p>在console面板上勾选‘保存日志’选项，则不会在你每次加载页面时，清空日志。当你想要调查页面关闭前的bugs时，可要记住这一选项哦。</p>
+<p>七、格式化代码</p>
+<p>Chrome通过其内置的优化器，帮助你提高文件内容的可读性。对于压缩过或者杂乱的代码，尤为适用。</p>
+<p>怎么实现呢？</p>
+<p>操作如下：</p>
+<p>1、F12打开Chrome开发工具；</p>
+<p>2、选择你想要阅读的文件；</p>
+<p>3、点击文件下方的”{ }”状按钮即可。</p>
+<p>九、设备模拟器</p>
+<p>另一个十分酷炫的功能就是，模拟移动设备端。</p>
+<p>例如我们可以通过Chrome模拟人为触摸屏幕和晃动设备。你甚至可以通过它改变你的地理位置哦。</p>
+<p>操作如下：</p>
+<p>1、F12打开Chrome调试器；<br>2、在调试器底部选中Emulation选项；</p>
+<p>3、最后在Emulation面板中，左侧选中Sensors即可。</p>
+<p>十、颜色选择器</p>
+<p>当你调用了Chrome的颜色选择器后，你可以通过你的鼠标，悬浮在网页中的任意处，获取颜色，它会十分精准地将其转换成对应的编码格式。</p>
+<p>是不是很炫酷？</p>
+<p>操作如下：</p>
+<p>1、F12打开Chrome调试器；</p>
+<p>2、选中目标元素；</p>
+<p>3、在样式编辑器中，点击颜色预览，就会出现这个颜色选择器。</p>
+<p>十一、强制改变元素状态</p>
+<p>Chrome开发工具有一个强制改变元素CSS状态的功能，如:hover和:focus。对于CSSer比较方便。</p>
+<p>十二、可视化“隐藏的DOM”</p>
+<p>Web浏览器在构建例如textbox，button以及input这些元素时，通常会隐藏在其之下的展现层元素。</p>
+<p>但是，我们可以通过Setting à General，在General面板中选中’Show user agent shadow DOM’这一选项，来展示这些被隐藏掉的基础元素。</p>
+<p>你甚至可以单独地去设置它们的样式。</p>
+<p>十三、选中下一个匹配项</p>
+<p>当你选中一个匹配项后，利用Ctrl+D（Mac上Cmd+D），就会将下一个相同的匹配项也选中，该功能可以帮助你同时编辑它们。</p>
+<p>十四、 改变颜色格式</p>
+<p>在颜色预览中，通过Shift + 鼠标点击，就可以在rgba,hsl和hexadecimal三种格式中，来回切换。</p>
+<p>十五、利用Chrome的工作空间，编辑本地文件</p>
+<p>Chrome的工作空间，也是非常强大的，它可以直接编辑和保存你的本地文件，无需额外的操作，例如复制、粘贴。怎么配置它呢？</p>
+<p>操作如下：</p>
+<p>1、 F12打开Chrome调试器</p>
+<p>2、 找到Sources栏，出现在左侧的控制面板，点击鼠标右键，选择Add Folder To Workspace。或者，直接将你整个工程文件夹，拖拽到调试器中。</p>
+<p>这样操作后，不管你打开哪个页面，都会出现刚才你操作的文件。为了更加有用，你可以将页面中用到的文件映射到相应的文件夹，允许在线编辑和简单的保存。</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+      
+        <div class="nav-next">
+          <a href="/2016/10/20/hexo笔记/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于本站</h1>
+        <div class="custom-widget-content">
+          
+          <ul><li><a href="/about">单单是你这么可人</a></li></ul>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="http://tankeren.cn" class="icon icon-github" target="_blank">github</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>Hexo &copy; 2016</span>
+    
+      <span class="split">|</span><span>Powered by  chan</span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="/js/app.js"></script>
+
+
+
+</body>
+
+</html>
