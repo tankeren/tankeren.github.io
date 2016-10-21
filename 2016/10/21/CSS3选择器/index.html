@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<!-- Head tag -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!--Description-->
+  
+  <meta name="description" content="汇总了CSS3各类选择器">
+  
+
+  <!--Author-->
+  
+  <meta name="author" content="chan">
+  
+
+  <!--Open Graph Title-->
+  
+      <meta property="og:title" content="CSS3选择器"/>
+  
+  <!--Open Graph Description-->
+  
+      <meta property="og:description" content="汇总了CSS3各类选择器" />
+  
+  <!--Open Graph Site Name-->
+  <meta property="og:site_name" content="Hexo"/>
+  <!--Type page-->
+  
+      <meta property="og:type" content="article" />
+  
+  <!--Page Cover-->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- Title -->
+  
+  <title>CSS3选择器 - Hexo</title>
+
+
+  <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
+
+  <!-- Custom CSS/Sass -->
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!----------------------------
+  https://github.com/GallenHu/hexo-theme-Daily
+
+ _____            _   _
+|  __ \          (_) | |
+| |  | |   __ _   _  | |  _   _
+| |  | |  / _` | | | | | | | | |
+| |__| | | (_| | | | | | | |_| |
+|_____/   \__,_| |_| |_|  \__, |
+                          __/ |
+                         |___/
+
+    --------------------------->
+
+</head>
+
+
+<body>
+
+  <!-- Nav -->
+  <header class="site-header">
+  <div class="header-inside">
+    <div class="logo">
+      <a href="/" rel="home">
+        
+        <img src="https://hexo.io/logo.svg" alt="Hexo" height="60">
+        
+      </a>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse">
+        <ul class="navbar-nav">
+          
+          
+            <li>
+              <a href="/">
+                
+                  首页
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives">
+                
+                  文章
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/categories">
+                
+                  分类
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/tags">
+                
+                  标签
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/works">
+                
+                  作品
+                
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about">
+                
+                  关于我
+                
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </nav>
+    <div class="button-wrap">
+      <button class="menu-toggle">Primary Menu</button>
+    </div>
+  </div>
+</header>
+
+
+  <!-- Main Content -->
+  <div class="content-area">
+  <div class="post">
+    <!-- Post Content -->
+    <div class="container">
+      <article>
+        <!-- Title date & tags -->
+        <div class="post-header">
+          <h1 class="entry-title">
+            CSS3选择器
+            
+          </h1>
+          <p class="posted-on">
+          2016-10-21
+          </p>
+          <div class="tags-links">
+            
+              
+                <a href="/tags/CSS3选择器/" rel="tag">
+                  CSS3选择器
+                </a>
+              
+            
+          </div>
+        </div>
+        <!-- Post Main Content -->
+        <div class="entry-content">
+          <p>通配符选择器:<br>通配选择器的作用就是对页面上所有的元素都生效，<br>页面上的所有标签都会展示出通配符选择器设定的样式。<br>这样的弊端就是影响网页渲染的时间。所以不推荐直接使用通配符选择器<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">*&#123;</div><div class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;</div><div class="line">    <span class="attribute">padding</span>: <span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 分组选择器(并集选择器) </em></strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">html</span>, <span class="selector-tag">body</span>, <span class="selector-tag">ul</span>, <span class="selector-tag">li</span>, <span class="selector-tag">ol</span>, <span class="selector-tag">dl</span>, <span class="selector-tag">dd</span>, <span class="selector-tag">dt</span>, <span class="selector-tag">p</span>, <span class="selector-tag">h1</span>, <span class="selector-tag">h2</span>, <span class="selector-tag">h3</span>, <span class="selector-tag">h4</span>, <span class="selector-tag">h5</span>, <span class="selector-tag">h6</span>, <span class="selector-tag">form</span>, <span class="selector-tag">fieldset</span>, <span class="selector-tag">legend</span>, <span class="selector-tag">img</span> &#123;</div><div class="line">    <span class="attribute">margin</span>:<span class="number">0</span>;</div><div class="line">    <span class="attribute">padding</span>:<span class="number">0</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<hr>
+<p><strong><em> 标签选择器 </em></strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h1</span>&#123;</div><div class="line">    <span class="attribute">color</span>: blue;</div><div class="line"></div><div class="line">&#125;</div><div class="line"><span class="selector-tag">p</span>&#123;</div><div class="line">    <span class="attribute">font-family</span>: 微软雅黑;</div><div class="line">    <span class="attribute">color</span>: cadetblue;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 类选择器: 最常用的选择器 </em></strong><br>类选择器的单独使用<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.desc</span>&#123;</div><div class="line">    <span class="attribute">border</span>: dashed;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>类选择器和其他形式组合使用<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.desc</span> <span class="selector-tag">p</span>&#123;</div><div class="line">    <span class="attribute">color</span>: deeppink;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.desc</span> *&#123;  <span class="comment">/**用到了通配符**/</span></div><div class="line">    <span class="attribute">color</span>: deeppink;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> ID选择器 </em></strong></p>
+<p>需要注意的是，注意大小写.</p>
+<p>不能使用词列表，参考区别2，错误代码如下：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">#title name&#123;</div><div class="line">    font-size: 30px;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>可以和其他选择器结合使用<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-id">#title</span>&#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</div><div class="line">&#125;</div><div class="line"><span class="selector-id">#title</span> <span class="selector-class">.name</span>&#123;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#000</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 后代选择器（包含选择器）</em></strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.desc</span> <span class="selector-tag">p</span>&#123;</div><div class="line">    <span class="attribute">color</span>: deeppink;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">20px</span>;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-class">.descendant</span> <span class="selector-tag">em</span>&#123;</div><div class="line">    <span class="attribute">font-weight</span>: bold;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 子元素选择器 </em></strong><br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.child</span> &gt; <span class="selector-tag">p</span> &gt; <span class="selector-tag">em</span>&#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 相邻选择器 </em></strong><br>如果需要选择紧接在另一个元素后的元素，而且二者有相同的父元素，可以使用相邻兄弟选择器（Adjacent sibling selector）。<br>例如，如果要增加紧接在 h1 元素后出现的段落的上边距，可以这样写：<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">h1</span> + <span class="selector-tag">p</span> &#123;<span class="attribute">margin-top</span>:<span class="number">50px</span>;&#125;</div></pre></td></tr></table></figure></p>
+<p>这个选择器读作：“选择紧接在 h1 元素后出现的段落，h1 和 p 元素拥有共同的父元素”。</p>
+<p><strong><em> 属性选择器 </em></strong><br>页面上所有的超链接标签颜色都会变成红，也可以和其他选择器组合使用</p>
+<p>根据一个属性去选择<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.testA</span> <span class="selector-tag">a</span><span class="selector-attr">[href]</span> &#123;</div><div class="line">    <span class="attribute">color</span>:red;</div><div class="line">&#125;</div><div class="line"></div><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href]</span> &#123;</div><div class="line">        <span class="attribute">color</span>:red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>根据多个属性去选择<br>同样也可以和其他选择器组合使用<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href]</span><span class="selector-attr">[title]</span> &#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">25px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>根据具体的属性值去选择，案例如上<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href='#']</span><span class="selector-attr">[title='test']</span> &#123;<span class="attribute">color</span>: deeppink;&#125;</div></pre></td></tr></table></figure></p>
+<p>属性与属性值必须匹配<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[class='aaa bbb']</span>&#123;</div><div class="line">    <span class="attribute">color</span>: chartreuse;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>根据部分属性值选择,即只要该属性中存在指定值得元素都会被选择到</p>
+<p>如果忽略了波浪号，则说明需要完成完全值匹配<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">p</span><span class="selector-attr">[class~='important']</span>&#123;</div><div class="line">    <span class="attribute">color</span>: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>子串匹配属性选择器 :<br>分三种<br>1.选择的属性中，属性值以指定的属性值开头<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href ^= 'http://www.apple']</span>&#123;</div><div class="line">    <span class="attribute">color</span>: deeppink;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>2.选择的属性中，属性值以指定的属性值结尾<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href $= 'microsoft.com']</span>&#123;</div><div class="line">    <span class="attribute">color</span>: cadetblue;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>3.选择的属性中，属性值存在指定的属性值<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">a</span><span class="selector-attr">[href*='www.w3school.com']</span>&#123;</div><div class="line">    <span class="attribute">color</span>: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>特定属性选择类型</p>
+<p>属性选择器最常见的用途还是匹配语言值<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-tag">p</span><span class="selector-attr">[lang|='en']</span>&#123;</div><div class="line">    <span class="attribute">color</span>: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 伪类 </em></strong><br>伪类名对大小写不敏感;</p>
+<blockquote>
+<p>:active 需要放在 :hover 后边才会生效;<br>:hover 需要放在 :link :visited 后边才会生效;<br>另外伪类也可以和其他选择器结合使用</p>
+<p>a:link {color: #FF0000} 未访问的链接<br>a:visited {color: #00FF00} 已访问的链接<br>a:hover {color: #FF00FF} 鼠标移动到链接上<br>a:active {color: #0000FF} 选定的链接 </p>
+<p>:first-child 伪类来选择元素的第一个子元素</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span><span class="selector-pseudo">:first-child</span>&#123;</div><div class="line">    <span class="attribute">color</span>: red;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>容易被误解！读法：选用.wl这个类的元素下边第一个p标签，并不是p标签内的第一个元素，与下边样式对比<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span> <span class="selector-tag">i</span><span class="selector-pseudo">:first-child</span>&#123;</div><div class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>读法：.wl 类下所有p标签中的第一个 i 标签<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span><span class="selector-pseudo">:first-child</span> <span class="selector-tag">i</span>&#123;</div><div class="line">    <span class="attribute">color</span>: <span class="number">#FF00FF</span>;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>读法：.wl 下边的第一个 p 标签中所有 i 标签<br><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">li</span><span class="selector-pseudo">:first-child</span>&#123;</div><div class="line">    <span class="attribute">font-family</span>: monospace;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p><strong><em> 伪元素 </em></strong><br>注：也可以和其他选择器结合使用</p>
+<blockquote>
+<p>:first-line 伪元素:用于向文本的首行设置特殊样式<br>:first-line 只能用于块级元素,看页面样式</p>
+</blockquote>
+<p>注：以下属性可以用于伪元素:first-line中</p>
+<pre><code>font
+color
+background
+word-spacing
+letter-spacing
+text-decoration
+vertical-align
+text-transform
+line-height
+clear
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span><span class="selector-pseudo">:first-line</span> &#123;</div><div class="line">    <span class="attribute">color</span>:<span class="number">#ff0000</span>;</div><div class="line">    <span class="attribute">font-variant</span>:small-caps;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<blockquote>
+<p>:first-letter: 处理首字母<br>:first-letter 只能用于块级元素,看页面样式</p>
+</blockquote>
+<p>注：以下属性可以用于伪元素:first-letter中</p>
+<pre><code>font
+color
+background
+margin
+padding
+border
+text-decoration
+vertical-align (仅当 float 为 none 时)
+text-transform
+line-height
+float
+clear
+</code></pre><figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span><span class="selector-pseudo">:first-letter</span>&#123;</div><div class="line">    <span class="attribute">color</span>: chocolate;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>以上两个就构成了多重伪元素</p>
+<blockquote>
+<p>:before 伪元素 :可以在元素的内容前面插入新内容</p>
+</blockquote>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span><span class="selector-pseudo">:before</span>&#123;</div><div class="line">    <span class="attribute">content</span>: <span class="built_in">url</span>(<span class="string">""</span>);</div><div class="line">&#125;</div><div class="line"><span class="selector-class">.wl</span> <span class="selector-tag">p</span><span class="selector-pseudo">:after</span>&#123;</div><div class="line">    <span class="attribute">content</span>: <span class="built_in">url</span>(<span class="string">""</span>);</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p><strong><em> 优先级的问题 </em></strong></p>
+<p>id选择器优先级 &gt; 类选择器优先级 &gt; 标签选择器优先级</p>
+
+        </div>
+      </article>
+    </div>
+    <!-- Comments -->
+    <div class="container">
+      
+    </div>
+    <!-- Pre or Next -->
+    <div class="nav-links">
+      
+      
+        <div class="nav-next">
+          <a href="/2016/10/20/Chrome的开发必备小技巧/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
+      
+    </div>
+
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <!-- Footer-widgets -->
+<div class="footer-widgets">
+  <div class="row inside-wrapper">
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">关于本站</h1>
+        <div class="custom-widget-content">
+          
+          <ul><li><a href="/about">单单是你这么可人</a></li></ul>
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Contact</h1>
+        <div class="widget-text">
+          
+            
+              <a href="http://tankeren.cn" class="icon icon-github" target="_blank">github</a>
+            
+          
+        </div>
+      </aside>
+    </div>
+    <div class="col-1-3">
+      <aside>
+        <h1 class="widget-title">Search</h1>
+        <div class="widget-text">
+          <form onSubmit="return appDaily.submitSearch('')">
+            <p>
+              <input type="text" placeholder="search..." id="homeSearchInput">
+            </p>
+            <!-- <input type="submit" value="GO"> -->
+          </form>
+        </div>
+      </aside>
+    </div>
+  </div>
+</div>
+<!-- Footer -->
+<footer class="site-info">
+  <p>
+    <span>Hexo &copy; 2016</span>
+    
+      <span class="split">|</span><span>Powered by  chan</span>
+    
+  </p>
+</footer>
+
+
+  <!-- After footer scripts -->
+  <!-- scripts -->
+<script src="//cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script>
+<script src="/js/app.js"></script>
+
+
+
+</body>
+
+</html>
