@@ -8,6 +8,8 @@
 
   <!--Description-->
   
+  <meta name="description" content="汇总了jquery常用选择器，方便快速操作页面元素">
+  
 
   <!--Author-->
   
@@ -16,9 +18,11 @@
 
   <!--Open Graph Title-->
   
-      <meta property="og:title" content="categories"/>
+      <meta property="og:title" content="jquery选择器"/>
   
   <!--Open Graph Description-->
+  
+      <meta property="og:description" content="汇总了jquery常用选择器，方便快速操作页面元素" />
   
   <!--Open Graph Site Name-->
   <meta property="og:site_name" content="单单可人博客"/>
@@ -33,7 +37,7 @@
 
   <!-- Title -->
   
-  <title>categories - 单单可人博客</title>
+  <title>jquery选择器 - 单单可人博客</title>
 
 
   <link rel="shortcut icon" href="https://hexo.io/icon/favicon-96x96.png">
@@ -137,19 +141,56 @@
         <!-- Title date & tags -->
         <div class="post-header">
           <h1 class="entry-title">
-            categories
+            jquery选择器
             
           </h1>
           <p class="posted-on">
-          2016-10-20
+          2016-11-01
           </p>
           <div class="tags-links">
+            
+              
+                <a href="/tags/web/" rel="tag">
+                  web
+                </a>
+              
+                <a href="/tags/jquery/" rel="tag">
+                  jquery
+                </a>
+              
             
           </div>
         </div>
         <!-- Post Main Content -->
         <div class="entry-content">
-          <p>分类页</p>
+          <h4 id="一，多选，使用“-”"><a href="#一，多选，使用“-”" class="headerlink" title="一，多选，使用“,”"></a>一，多选，使用“,”</h4><blockquote>
+<p>$(“div,span,p.myClass”)</p>
+</blockquote>
+<h4 id="二，class-选择，标签加class-组合"><a href="#二，class-选择，标签加class-组合" class="headerlink" title="二，class 选择，标签加class 组合"></a>二，class 选择，标签加class 组合</h4><blockquote>
+<p>$(“.myclass.otherclass”) 必须同时满足两个条件<br>$(“p.myClass”),标签+class 选择</p>
+</blockquote>
+<h4 id="三，子元素下选择-使用“-”空格"><a href="#三，子元素下选择-使用“-”空格" class="headerlink" title="三，子元素下选择,使用“ ”空格"></a>三，子元素下选择,使用“ ”空格</h4><blockquote>
+<p>$(‘#elementId .myClass’)//指定ID元素下进行筛选==<br>$(#elementId).find(‘.myClass’)//</p>
+</blockquote>
+<h4 id="四，a-attr-’’-标签-属性"><a href="#四，a-attr-’’-标签-属性" class="headerlink" title="四，a[attr=’’] 标签+属性"></a>四，a[attr=’’] 标签+属性</h4><blockquote>
+<p>$(‘a[attr]’) </p>
+</blockquote>
+<p>也可以 </p>
+<blockquote>
+<p>$(‘a[attr=”1”]’)</p>
+</blockquote>
+<h4 id="五，-‘parent-gt-child-‘"><a href="#五，-‘parent-gt-child-‘" class="headerlink" title="五，$(‘parent &gt; child ‘)"></a>五，$(‘parent &gt; child ‘)</h4><blockquote>
+<p>$(“ul.topnav &gt; li”) </p>
+</blockquote>
+<p>注意与三区别，(E &gt; F)和(E F)都作为后代组合，但是他们有所不同，更具体的是(E &gt; F)它只会选择第一级的后代。</p>
+<h4 id="六，-“prev-next”"><a href="#六，-“prev-next”" class="headerlink" title="六，$( “prev + next” )"></a>六，$( “prev + next” )</h4><blockquote>
+<p>$(“label + input”) </p>
+</blockquote>
+<p>满足 lable 后元素为 input ，并且只能是同级元素（并行）<br>重要的一点既要考虑下一个相邻兄弟选择器（ prev + next ）和一般兄弟选择器（ prev ~ siblings ）所选择到的元素，必须在同一个父元素下。</p>
+<h4 id="七，-‘-pre-siblings’"><a href="#七，-‘-pre-siblings’" class="headerlink" title="七，$(‘#pre~siblings’)"></a>七，$(‘#pre~siblings’)</h4><p> (prev + next) 和 (prev ~ siblings)之间最值得注意的不同点是他们各自的可及之范围。前者只达到紧随的同级元素，后者扩展了该达到跟随其的所有同级元素。</p>
+<blockquote>
+<p>$(“#prev ~ div”)<br>表示ID 为prev 后所有的同级的DIV元素</p>
+</blockquote>
 
         </div>
       </article>
@@ -161,6 +202,14 @@
     <!-- Pre or Next -->
     <div class="nav-links">
       
+        <div class="nav-previous">
+          <a href="/2016/11/01/markdown语法/" rel="prev"><span class="meta-arraw meta-arraw-left"></span> Older Posts</a>
+        </div>
+      
+      
+        <div class="nav-next">
+          <a href="/2016/10/21/CSS3选择器/" rel="prev">Newer Posts <span class="meta-arraw meta-arraw-right"></span></a>
+        </div>
       
     </div>
 
